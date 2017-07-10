@@ -17,4 +17,9 @@
 - training / validation / test 3개로 나누는 이유 : overfitting 방지 -> 학습 과정에서 막 학습용 이미지에서 뭔가를 기억(cache) 하기도 하기 때문에 그 학습 과정에 쓴 이미지에 대해서는 성능이 엄청 좋음 근데 따른거 넣으면 성능 똥 -> 그래서 3개로 나눠서 대체로 80퍼 training / 10퍼는 트레이닝 과정 중에 validation / 10은 test로 
 
 
+# Tensorflow
 
+- multiple gpu : because no supported kernel for gpu devices is available 나오면 
+
+    config = tf.ConfigProto(allow_soft_placement = True)
+    sess = tf.Session(config = config)
