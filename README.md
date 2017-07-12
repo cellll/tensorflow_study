@@ -20,3 +20,12 @@
 
     config = tf.ConfigProto(allow_soft_placement = True)
     sess = tf.Session(config = config)
+    
+    for i in xrange(gpu개수):
+       with tf.device('/gpu:%d' % i)
+       
+
+
+ - saver : 변수선언 다 된 후에(세션 전에) tf.saver.Saver(~) <- max_to_keep=None 하면 스텝 다 저장함(default=5)
+        saver.save(sess ~~~)
+
