@@ -18,11 +18,11 @@
 
 - multiple gpu : because no supported kernel for gpu devices is available 나오면 
 
-    config = tf.ConfigProto(allow_soft_placement = True)
-    sess = tf.Session(config = config)
+         config = tf.ConfigProto(allow_soft_placement = True)
+         sess = tf.Session(config = config)
     
-    for i in xrange(gpu개수):
-       with tf.device('/gpu:%d' % i)
+         for i in xrange(gpu개수):
+             with tf.device('/gpu:%d' % i)
        
 
 
