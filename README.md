@@ -26,6 +26,8 @@
        
 
 
- - saver : 변수선언 다 된 후에(세션 전에) tf.saver.Saver(~) <- max_to_keep=None 하면 스텝 다 저장함(default=5)
+ - saver : 변수선언 다 된 후에(세션 전에) tf.train.Saver(~) <- max_to_keep=None 하면 스텝 다 저장함(default=5)
         saver.save(sess ~~~)
-
+        
+        saver = tf.train.Saver(tf.all_variables(), max_to_keep=None)
+        saver.save(sess, ckpt_path, global_step=step)
