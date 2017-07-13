@@ -21,8 +21,8 @@
          config = tf.ConfigProto(allow_soft_placement = True)
          sess = tf.Session(config = config)
     
-         for i in xrange(gpu개수):
-             with tf.device('/gpu:%d' % i)
+              for i in xrange(gpu개수):
+                  with tf.device('/gpu:%d' % i)
        
 
 
