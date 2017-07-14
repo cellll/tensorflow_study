@@ -31,3 +31,8 @@
         
         saver = tf.train.Saver(tf.all_variables(), max_to_keep=None)
         saver.save(sess, ckpt_path, global_step=step)
+
+
+# Slim
+
+- TF-Slim : lightweight high-level API -> 모델을 defining, training, evaluating -> pretrained weight 갖고 fine tuning 하는거를 이거 쓰면 되는듯
