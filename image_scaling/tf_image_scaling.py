@@ -17,9 +17,6 @@ import sys
 import tarfile
 from six.moves import urllib
 
-from matplotlib.pyplot import imshow
-from matplotlib.pyplot import imsave
-from matplotlib import pyplot
 import math
 import random
 import time
