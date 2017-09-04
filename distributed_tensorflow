@@ -1,0 +1,6 @@
+- tf.train.Server.create_local_server()  : single-process cluster 를 만든다 in-process server랑 
+
+- cluster: task set
+- 각 task는 tf server와 연관있는데 머갖고있냐면 master : create session, worker : 그래프의 operation 실행
+- cluster 는 jobs로 분리될수있고 각 잡은 1개나 그이상 task를 포함  그니까  cluster > job > task
+
