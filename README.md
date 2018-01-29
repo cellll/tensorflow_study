@@ -33,6 +33,6 @@
         saver.save(sess, ckpt_path, global_step=step)
 
 
-# Slim
+# NO
 
-- TF-Slim : lightweight high-level API -> 모델을 defining, training, evaluating -> pretrained weight 갖고 fine tuning 하는거를 이거 쓰면 되는듯
+- 파이썬 gc.collect() 해도 해제 안되는거는 glibc 에서 C에서 malloc 머 이런거 해서 그런거 -> jemalloc 라이브러리 이게 있음
