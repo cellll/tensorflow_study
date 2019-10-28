@@ -11,9 +11,9 @@
    
    
    
-- Hyperparameter : 학습을 지가 알아서 쭉 돌리다가 학습 방법을 변경하거나 그만둬야 할때를 결정하는 파라미터 
+- Hyperparameter : 학습을 돌리다가 학습 방법을 변경하거나 그만둬야 할때를 결정하는 파라미터 
 
-1. 학습 방법 변경 :  하이퍼파라미터 갖고 최적의 학습방법 결정하는 거를 하이퍼파라미터 튜닝 이라고 한당 -> validation 을 쓴다
+1. 학습 방법 변경 :  하이퍼파라미터 갖고 최적의 학습방법 결정하는 것 하이퍼파라미터 튜닝  -> validation 을 쓴다
 2. 학습 중단 : validation 그 정확도가 줄어드는 시점 -> overfitting 발생 시점
 
 
@@ -24,17 +24,17 @@
   -> validation set : v1
   -> test : test1
   
-  -> 어떻게하냐면 t1 t2 t3 갖고 트레이닝하고 v1 갖고 validation 하고 문제없으면 다시 t1 t2 t3 v1 // t1 t2 t3 v1 이런식으로 하고 마지막에 test1 갖고 테스트
+  -> t1 t2 t3 으로 트레이닝하고 v1 으로 validation 하고 문제없으면 다시 t1 t2 t3 v1 // t1 t2 t3 v1 하고 마지막에 test1 으로 테스트
   
   
-2. Cross-Validation : t1 t2 t3 v1 으로 박아놓으면 검증이 정확한게 아님
+2. Cross-Validation : t1 t2 t3 v1 으로 고정해 놓으면 검증이 정확한게 아님
 
   -> t1 t2 t3 / v1 으로 검증
   -> t1 t2 v1 / t3 으로 검증
   -> t1 t3 v1 / t2 로 검증..
   
-  이렇게 validaiton set 을 하나씩 번갈아가면서 하는거가 cross-validation 이다 저거 저렇게 쭉 돌려서 평균값 냄
-  -> 근데 계산량이 많아짐
+  이렇게 validaiton set 을 하나씩 번갈아가면서 하는것이 cross-validation. 계산한 모든 값의 평균값
+  -> 계산량이 많아짐
   
   
 
